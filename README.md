@@ -59,6 +59,7 @@ installed in place and is editable.
 Load the environment as usual.
 ``` python
 import gym
+import gym_line_follower
 env = gym.make("LineFollower-v0")
 ```
 
