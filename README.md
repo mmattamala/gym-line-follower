@@ -4,6 +4,17 @@ Line follower robot simulator for OpenAI Gym.
 
 <img src="media/sim_env.gif" width="500">
 
+## Personal todo stuff
+
+- Implement an array-like sensor pointing downwards
+- Implement LineFollowerEnv with args, kwargs
+- Implement simple PID example compatible with gym
+- Check reward grid-based implementation
+- Parameterize some variables (e.g. time step reward)
+- Change randomization to tile-based (to follow official rules)
+- Review robot model, sensors, actuator model, URDF for further modifications/generalization
+
+
 ## Introduction
 Gym-Line-Follower is a simulator for a line following robot.
 It is designed for developing line following algorithms using
@@ -30,6 +41,7 @@ Requirements:
 - Python 3.5+
 - OpenAI Gym
 - NumPy
+- Matplotlib
 - Shapely
 - Pybullet
 - OpenCV

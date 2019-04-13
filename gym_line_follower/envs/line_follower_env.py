@@ -28,9 +28,19 @@ class LineFollowerEnv(gym.Env):
 
     SUPPORTED_OBSV_TYPE = ["points_visible", "points_latch", "points_latch_bool", "camera"]
 
-    def __init__(self, gui=True, nb_cam_pts=8, sub_steps=10, sim_time_step=1 / 250,
-                 max_track_err=0.3, power_limit=0.4, max_time=60, config=None, randomize=True, obsv_type="points_latch",
-                 track=None, track_render_params=None):
+    def __init__(self,
+                 gui=True,
+                 nb_cam_pts=8,
+                 sub_steps=10,
+                 sim_time_step=1 / 250,
+                 max_track_err=0.3,
+                 power_limit=0.4,
+                 max_time=60,
+                 config=None,
+                 randomize=True,
+                 obsv_type="points_latch",
+                 track=None,
+                 track_render_params=None):
         """
         Create environment.
         :param gui: True to enable pybullet OpenGL GUI
